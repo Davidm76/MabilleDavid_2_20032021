@@ -1,12 +1,49 @@
 @font-face {
-              font-family: 'raleway-Regular'; 
-              src: url('fonts/Raleway-Regular.ttf');
-                              
+              font-family: 'raleway'; 
+              src:
+              url('fonts/Raleway-Regular.ttf'), 
+              url('fonts/Raleway-Bold.ttf');
+                           
                font-weight: normal;
                font-style: normal;
 }
 
+body {
+               background-color: #F2F2F2;
+}
+
 h1 {
-               font-family: 'raleway-regular', "Arial Black", Arial, Helvetica, sans-serif;
-               font-size: 32px ;
+               font-family: 'raleway';
+               font-size: 1.3em ;
+               font-weight: bold;
+}
+
+h2 {
+               font-family: 'raleway';
+}
+
+.bloc1 {
+               display: flex;  
+               justify-content: space-between;
+}
+
+.menu1 {
+             font-family: 'raleway';
+             display: flex;
+             padding: 0;
+             list-style-type: none;
+}
+
+.menu1 a {
+               display: block;
+               min-width: 130px;
+               text-align: center;
+}
+
+p {
+               font-family: 'raleway';
+}
+
+.menu2 {
+               font-family: 'raleway';
 }
