@@ -1,0 +1,12 @@
+@font-face {
+              font-family: 'raleway-Regular'; 
+              src: url('fonts/Raleway-Regular.ttf');
+                              
+               font-weight: normal;
+               font-style: normal;
+}
+
+h1 {
+               font-family: 'raleway-regular', "Arial Black", Arial, Helvetica, sans-serif;
+               font-size: 32px ;
+}
