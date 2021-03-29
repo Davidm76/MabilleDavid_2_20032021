@@ -3,82 +3,89 @@
                <head>
                               <meta charset="utf-8" />
                               <link rel="stylesheet" href="style.css" />
+                              <script src="https://kit.fontawesome.com/d745661341.js" crossorigin="anonymous"></script>
                               <title> Reservia</title>
-                              <!--head a faire avant le 29/03/2021-->
+               </head>
+
+               <body>
+                              <header>
+                              <!--header a faire avant le 29/03/2021-->
                
-                              <div class="bloc1">
-                                             <img src="image/Reservia.svg" alt="logo reservia"/>
-                                             <nav class="menu1">
-                                                            <li>
-                                                                          <a href="Hébergements">Hebergements</a>
-                                                            </li>
-                                                            <li>
+                                             <div class="bloc1">
+                                                            <img src="image/Reservia.svg" alt="logo reservia"/>
+                                                            <nav class="menu1">
+                                                                           <li>
+                                                                           <a href="Hébergements">Hebergements</a>
+                                                                           </li>
+                                                                           <li>
                                                                            <a href="Activités">Activités</a>
-                                                            </li>
-                                                            <li>
+                                                                           </li>
+                                                                           <li>
                                                                            <a href="S'inscrire">S'inscrire</a>
-                                                            </li>
-                                             </nav>
-                              </div>
-                              <h1><strong>Trouvez votre hébergement pour des vacances de rêve</strong></h1>
-                              <p>En plein centre ville ou en pleine nature</p>
-                              <!--branch formulaire créé-->
-                              <form method="post" action="traitement.php">
-                                             <p>
+                                                                           </li>
+                                                            </nav>
+                                             </div>
+                                             <h1>Trouvez votre hébergement pour des vacances de rêve</h1>
+                                             <p>En plein centre ville ou en pleine nature</p>
+                                             <!--branch formulaire créé-->
+                                             <form method="post" action="traitement.php">
+                                                            <p>
                                                             <!--image logo à inserer-->
-                                                            <label for="ville_pays"></label><img src="" alt="icone"></label>
+                                                            <label for="ville_pays"><i class="fas fa-map-marker-alt" alt="icone"></label></i>
                                                             <input type="text" name="ville_pays" id="ville_pays" placeholder="Marseille, France"/>
                                                             <input type="submit" value="Rechercher"/>
-                                             </p>
-                              </form>
-                              <div>
-                                             <p>Filtres</p>
-                                             <!--icone à insérer-->
-                                             <nav class="menu2">
-                                                            <li>&Eacute;conomique</li>
-                                                            <li>Familial</li>
-                                                            <li>Romantique</li>
-                                                            <li>Animaux autorisés</li>
-                                             </nav>
-                              </div>
-</head>
-
-<body>
-               <p>Plus de 500 logements sont disponibles dans cette ville</p>
-               <div>
-                              <div>
-                                             <h2>Hébergements à Marseille</h2>
-                                             <!--icone étoile et texte à ajouter sous chaque image-->
-                                             <div>
-                                                            <img src="image/marcus-loke-WQJvWU_HZFo-unsplash.jpg" alt="auberge la Cannebière">
-                                                            <img src="image/fred-kleber-gTbaxaVLvsg-unsplash.jpg" alt="hôtel du port">
-                                                            <img src="image/reisetopia-B8WIgxA_PFU-unsplash.jpg" alt="Hôtel Les mouettes">
-                                                            <img src="image/annie-spratt-Eg1qcIitAuA-unsplash.jpg" alt="Hôtel de la mer">
-                                                            <img src="image/nicate-lee-kT-ZyaiwBe0-unsplash.jpg" alt="Auberge Le Panier">
-                                                            <img src="image/febrian-zakaria-M6S1WvfW68A-unsplash.jpg" alt="Hôtel chez Amina">
+                                                            </p>
+                                             </form>
+                                             <div class="bloc2">
+                                                            <p>Filtres</p>
+                                                            <!--icone à insérer-->
+                                                            <nav class="menu2">
+                                                                           <li><i class="fas fa-money-bill-wave"></i>&Eacute;conomique</li>
+                                                                           <li><i class="fas fa-child"></i>Familial</li>
+                                                                           <li><i class="fas fa-heart"></i>Romantique</li>
+                                                                           <li><i class="fas fa-dog"></i>Animaux autorisés</li>
+                                                            </nav>
                                              </div>
-                                             <p>Afficher plus</p>
+                              </header>
 
-                              </div>   
+                              <main>
 
-                              <div>
-                                             <h2>Les plus populaires</h2>
-                                             <!--icone étoile et texte a inserer sous chaque image-->
+                                             <!--logo à insérer-->
+                                             <p><i class="fas fa-info-circle"></i>Plus de 500 logements sont disponibles dans cette ville</p>
+
                                              <div>
-                                                            <img src="image/emile-guillemot-Bj_rcSC5XfE-unsplash.jpg" alt="Hôtel Le soleil du matin">
-                                                            <img src="image/aw-creative-VGs8z60yT2c-unsplash.jpg" alt="Au coeur de l'eau Chambres d'hôtes">
-                                                            <img src="image/febrian-zakaria-sjvU0THccQA-unsplash.jpg" alt="Hôtel Tout bleu et blanc">
+                                                            <h2>Hébergements à Marseille</h2>
+                                                            <!--icone étoile et texte à ajouter sous chaque image-->
+                                                            <div>
+                                                                           <img src="image/marcus-loke-WQJvWU_HZFo-unsplash.jpg" alt="auberge la Cannebière">
+                                                                           <img src="image/fred-kleber-gTbaxaVLvsg-unsplash.jpg" alt="hôtel du port">
+                                                                           <img src="image/reisetopia-B8WIgxA_PFU-unsplash.jpg" alt="Hôtel Les mouettes">
+                                                                           <img src="image/annie-spratt-Eg1qcIitAuA-unsplash.jpg" alt="Hôtel de la mer">
+                                                                           <img src="image/nicate-lee-kT-ZyaiwBe0-unsplash.jpg" alt="Auberge Le Panier">
+                                                                           <img src="image/febrian-zakaria-M6S1WvfW68A-unsplash.jpg" alt="Hôtel chez Amina">
                                              </div>
+                                                            <p>Afficher plus</p> 
+                                             </div>  
 
-                              </div>
-               </div>
-               <div>
+                                             <div>
+                                                            <h2>Les plus populaires</h2>
+                                                            <!--icone étoile et texte a inserer sous chaque image-->
+                                                            <div>
+                                                                           <img src="image/emile-guillemot-Bj_rcSC5XfE-unsplash.jpg" alt="Hôtel Le soleil du matin">
+                                                                           <img src="image/aw-creative-VGs8z60yT2c-unsplash.jpg" alt="Au coeur de l'eau Chambres d'hôtes">
+                                                                           <img src="image/febrian-zakaria-sjvU0THccQA-unsplash.jpg" alt="Hôtel Tout bleu et blanc">
+                                                            </div>
+
+                                             </div>
+               
+               
                               
-               </div>
+                              </main>
+                              
+                              <footer>
 
-</body>
+                              </footer>
 
-<footer>
+               </body>
 
-</footer>
 </html>

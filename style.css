@@ -9,17 +9,18 @@
 }
 
 body {
+               font-family: 'raleway';
                background-color: #F2F2F2;
 }
 
 h1 {
-               font-family: 'raleway';
+               
                font-size: 1.3em ;
                font-weight: bold;
 }
 
 h2 {
-               font-family: 'raleway';
+               
 }
 
 .bloc1 {
@@ -28,7 +29,6 @@ h2 {
 }
 
 .menu1 {
-             font-family: 'raleway';
              display: flex;
              padding: 0;
              list-style-type: none;
@@ -40,10 +40,19 @@ h2 {
                text-align: center;
 }
 
-p {
-               font-family: 'raleway';
+.bloc2 {
+               display: flex;
+               justify-content: flex-start;
+               align-items: baseline;
 }
 
 .menu2 {
-               font-family: 'raleway';
+               display: flex;
+               padding: 0;
+               list-style-type: none;
 }
+
+               
+
+
+               
