@@ -4,57 +4,60 @@
                               <meta charset="utf-8" />
                               <link rel="stylesheet" href="style.css" />
                               <script src="https://kit.fontawesome.com/d745661341.js" crossorigin="anonymous"></script>
-                              <title> Reservia</title>
+                              <title>Reservia</title>
                </head>
 
                <body>
                               <header>
-                              <!--header a faire avant le 29/03/2021-->
+                              <!--header a terminer avant le 05/04/2021-->
                
                                              <div class="bloc1">
                                                             <img src="image/Reservia.svg" alt="logo reservia"/>
-                                                            <nav class="menu1">
-                                                                           <li>
-                                                                           <a href="Hébergements">Hebergements</a>
-                                                                           </li>
-                                                                           <li>
-                                                                           <a href="Activités">Activités</a>
-                                                                           </li>
-                                                                           <li>
-                                                                           <a href="S'inscrire">S'inscrire</a>
-                                                                           </li>
+                                                            <nav class="menu1">          
+                                                                           <a class="active" href="#hébergements">Hébergements</a>
+                                                                           <a href="#activités">Activités</a>
+                                                                           <a href="s'inscrire">S'inscrire</a>                                                                      
                                                             </nav>
                                              </div>
                                              <h1>Trouvez votre hébergement pour des vacances de rêve</h1>
                                              <p>En plein centre ville ou en pleine nature</p>
-                                             <!--branch formulaire créé-->
+                                             
                                              <form method="post" action="traitement.php">
                                                             <p>
-                                                            <!--image logo à inserer-->
+                                                            
                                                             <label for="ville_pays"><i class="fas fa-map-marker-alt" alt="icone"></label></i>
-                                                            <input type="text" name="ville_pays" id="ville_pays" placeholder="Marseille, France"/>
-                                                            <input type="submit" value="Rechercher"/>
+                                                            <input class="form" type="text" name="ville_pays" id="ville_pays" placeholder="Marseille, France"/>
+                                                            <input class="rechercher" type="submit" value="Rechercher"/>
                                                             </p>
                                              </form>
+
                                              <div class="bloc2">
-                                                            <p>Filtres</p>
-                                                            <!--icone à insérer-->
-                                                            <nav class="menu2">
-                                                                           <li><i class="fas fa-money-bill-wave"></i>&Eacute;conomique</li>
-                                                                           <li><i class="fas fa-child"></i>Familial</li>
-                                                                           <li><i class="fas fa-heart"></i>Romantique</li>
-                                                                           <li><i class="fas fa-dog"></i>Animaux autorisés</li>
-                                                            </nav>
+                                                            <p class="filtre">Filtres</p>
+                                                            <section>
+                                                                           <div class="économique">
+                                                                                          <span class="fas fa-money-bill-wave"></span><p>&Eacute;conomique</p>                                                                                         
+                                                                           </div>
+                                                                           <div class="familial">
+                                                                                          <span class="fas fa-child"></span><p>Familial</p>                                                                                      
+                                                                           </div>
+                                                                           <div class="romantique">
+                                                                                          <span class="fas fa-heart"></span><p>Romantique</p>                                                                                        
+                                                                           </div>
+                                                                           <div class="animaux">
+                                                                                          <span class="fas fa-dog"></span><p>Animaux autorisés</p>
+                                                                           </div>                                                                                     
+                                                            </section>
                                              </div>
+                                                            
                               </header>
 
                               <main>
 
                                              <!--logo à insérer-->
-                                             <p><i class="fas fa-info-circle"></i>Plus de 500 logements sont disponibles dans cette ville</p>
+                                             <p><span class="fas fa-info"></span>Plus de 500 logements sont disponibles dans cette ville</p>
 
                                              <div>
-                                                            <h2>Hébergements à Marseille</h2>
+                                                            <h2 id="hébergements">Hébergements à Marseille</h2>
                                                             <!--icone étoile et texte à ajouter sous chaque image-->
                                                             <div>
                                                                            <img src="image/marcus-loke-WQJvWU_HZFo-unsplash.jpg" alt="auberge la Cannebière">
@@ -76,6 +79,11 @@
                                                                            <img src="image/febrian-zakaria-sjvU0THccQA-unsplash.jpg" alt="Hôtel Tout bleu et blanc">
                                                             </div>
 
+                                             </div>
+
+                                             <div>
+                                                            <h2 id="activités">Activités à Marseille</h2>
+                                                            <!--ajouter photo activité-->
                                              </div>
                
                
