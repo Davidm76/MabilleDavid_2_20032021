@@ -13,7 +13,7 @@ body {
                background-color: #F2F2F2;
 }
 
-
+/*Début_header*/
 
 h1 {
                
@@ -152,11 +152,75 @@ form {
                border: solid; border-color: #D5DBDB;
                border-width: thin;   
                border-radius: 30px 30px 30px 30px;
-               padding: 7px 7px 7px 12px;
+               padding: 7px 10px 7px 10px;
+               margin-right: 8px;
+}
+
+/*fin_header*/
+               
+/*début_main*/
+
+.bloc3 {
+                display: flex;
+                align-content:space-around;
+}
+
+.héber {
+                display: flex;
+                flex-wrap: wrap;
+                border: solid; border-color: #D5DBDB; background-color: #D5DBDB;
+                border-radius: 30px;
+}
+
+.p1, .p2, .p3, .p4, .p5, .p6 {
+                border: solid 2px; border-color: white; background-color: white;
+                border-radius: 30px;
+}
+
+.fa-star{
+                color: #0065FC;
+}
+
+.p1 i:nth-of-type(5) {
+                color: #D5DBDB;
+}
+
+.p3 i:nth-of-type(5) {
+                color: #D5DBDB;
+}
+
+.p4 i:nth-of-type(4) {
+                color: #D5DBDB;
+}
+
+.p5 i:nth-of-type(5) {
+    color: #D5DBDB;
+}
+
+.p6 i:nth-of-type(5) {
+    color: #0065FC;
+}
+
+.pop {
+                display: flex;
+                flex-wrap: wrap;
+                border: solid; border-color: #D5DBDB; background-color: #D5DBDB;
+                border-radius: 30px;
+}
+
+.bloc3 img  {
+                 max-width: 16rem;
+                 height: 12rem;
 }
 
 
-               
 
+
+.bloc4 {
+                display: flex;
+                align-content: space-around;
+}
+
+/*fin_main*/
 
                
