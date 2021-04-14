@@ -10,7 +10,14 @@
 
 body {
                font-family: 'raleway';
-               background-color: #F2F2F2;
+               background-color: #FFF;
+}
+
+main {
+    padding-right: 30px;
+    padding-left: 30px;
+    margin-right: auto;
+    margin-left: auto;
 }
 
 /*Début_header*/
@@ -74,6 +81,7 @@ h1 {
 .bloc2 p {
                margin-right: 20px;
                font-weight: bold;
+               font-size: 1.100rem;
                color: #000000;
                border: solid 2px #D5DBDB;
                border-radius: 30px;
@@ -147,7 +155,7 @@ form {
 
 /*fin_header*/
                
-/*début_section*/
+/*début_section héber et populaire*/
 
 .bloc3 {
                 display: flex;
@@ -162,7 +170,7 @@ h2 {
                 display: flex;
                 flex-direction: column;
                 width: 66.66%;
-                border: solid; border-color: #ebebeb; background-color: #ebebeb;
+                border: solid; border-color: #F2F2F2; background-color: #F2F2F2;
                 border-radius: 30px;
                 margin: 0rem 3rem 0rem 1rem;           
 }
@@ -195,9 +203,10 @@ h2 {
 }
 
 .vignette img {
-                max-height: 280px;
+                max-height: 230px;
                 position: relative;
                 overflow: hidden;
+                object-fit: cover;
 }
 
 .bloc3 .héber img  {
@@ -211,7 +220,7 @@ h2 {
 } 
 
 .héber p:last-child {
-                margin: 2.5rem 0 0 2rem;
+                margin: 0 0 1rem 1rem;
                 font-size: 1.200rem;
 }
 
@@ -219,23 +228,24 @@ h2 {
                 display: flex;
                 flex-direction: column;
                 width: 33.33%;
-                border: solid; border-color: #ebebeb; background-color: #ebebeb;
+                border: solid; border-color: #F2F2F2; background-color: #F2F2F2;
                 border-radius: 30px;
                 margin: 0rem 1rem 0rem 0rem;
 }
 
 .vignette_populaire {
                 display: flex;
-                height: 220px;
+                height: 170px;
                 overflow: hidden;
 }
 
 .vignette_populaire img {
-                max-height: 400px;
+                max-height: 300px;
                 position: relative;
-                width: 250px;
+                width: 200px;
                 border-radius: 30px 0 0 30px;
                 margin-right: 1rem;
+                object-fit: cover;
 }
 
 .vignette_populaire>div {
@@ -304,11 +314,140 @@ h2 {
 }
 
 
+
+
+/*fin_section héber et populaire*/
+
+/*début section activité*/
+
 .bloc4 {
                 display: flex;
-                align-content: space-around;
+                
 }
 
-/*fin_section*/
+.structure_photo {
+                display: flex;
+                width: 100%;
+                max-height: 100%;
+                overflow: hidden;
+                justify-content: space-between;
+                
+}
+
+.structure_photo img {
+                border-radius: 27px 27px 0 0;
+                
+}
+
+.structure_photo p {
+                font-size: 1rem;
+                font-weight: bolder;
+                margin: 1rem;
+}
+
+.photo_1 {
+                max-width: 25%;
+                position: relative;
+                border: solid 2px; border-color: #f2f2f2; 
+                border-radius: 30px;
+}
+
+.photo_2_3 {
+                display: flex;
+                flex-direction: column;
+                max-width: 25%;
+                position: relative;
+                
+}
+
+.photo_2_3 div {
+                border: solid 2px; border-color: #f2f2f2;
+                border-radius: 30px;
+                margin: 0rem;
+}
+
+.photo_2_3 div:first-child {
+                margin-bottom: 2rem;
+}
+                
+
+.photo_4 {
+                max-width: 25%;
+                position: relative;
+                border: solid 2px; border-color: #f2f2f2; 
+                border-radius: 30px;
+}
+
+.photo_5_6 {
+                display: flex;
+                flex-direction: column;
+                max-width: 25%;
+                position: relative; 
+                
+}
+
+.photo_5_6 div {
+                border: solid 2px; border-color: #f2f2f2;
+                border-radius: 30px;
+                margin: 0rem;
+}
+
+.photo_5_6 div:first-child {
+                margin-bottom: 2rem;
+}
+
+.grande {
+                height: 29.5rem;
+                max-width: 100%;
+                position: relative;
+                object-fit: cover;
+}
+
+.moyenne {
+                height: 18rem;
+                width: 100%;
+                position: relative;
+                object-fit: cover;
+}
+
+.petite {
+                height: 12rem;
+                width: 100%;
+                position: relative;
+                object-fit: cover;
+}
+
+.très_petite {
+                height: 8rem;
+                width: 100%;
+                position: relative;
+                object-fit: cover;
+} 
+
+/*fin section activité*/
+
+/*début section footer*/
+
+.bas_page {
+                display: flex;
+                justify-content: space-between;
+                background-color: #f2f2f2;
+                margin-top: 4rem;
+                padding: 2rem 2rem;
+}
+
+.bas_page aside {
+                margin-left: 2rem;
+}
+
+.bas_page aside:last-child {
+                margin-right: 24rem;
+}
+
+.titre {
+                font-weight: bolder;
+}
+
+/*fin section footer*/
 
                
