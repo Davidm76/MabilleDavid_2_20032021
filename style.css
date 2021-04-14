@@ -172,7 +172,7 @@ h2 {
                 width: 66.66%;
                 border: solid; border-color: #F2F2F2; background-color: #F2F2F2;
                 border-radius: 30px;
-                margin: 0rem 3rem 0rem 1rem;           
+                margin: 0rem 3rem 0rem 0rem;           
 }
 
 .héber_1, .héber_2 {
@@ -230,7 +230,6 @@ h2 {
                 width: 33.33%;
                 border: solid; border-color: #F2F2F2; background-color: #F2F2F2;
                 border-radius: 30px;
-                margin: 0rem 1rem 0rem 0rem;
 }
 
 .vignette_populaire {
@@ -322,6 +321,7 @@ h2 {
 
 .bloc4 {
                 display: flex;
+                width: 100%;
                 
 }
 
@@ -331,7 +331,6 @@ h2 {
                 max-height: 100%;
                 overflow: hidden;
                 justify-content: space-between;
-                
 }
 
 .structure_photo img {
@@ -343,6 +342,7 @@ h2 {
                 font-size: 1rem;
                 font-weight: bolder;
                 margin: 1rem;
+                
 }
 
 .photo_1 {
