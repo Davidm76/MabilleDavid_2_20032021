@@ -25,12 +25,16 @@ main {
 h1 {
                
                font-size: 1.4em ;
-               font-weight: bold;
+               font-weight: bolder;
 }
 
 .bloc1 {
                display: flex;  
                justify-content: space-between;
+}
+
+.bloc1_mobile {
+                display: none;
 }
 
 .menu1 {
@@ -41,7 +45,7 @@ h1 {
 
 .menu1 a:hover {
                border-top: solid 2px #0065FC;
-               padding-top: 15px; 
+               padding-top: 40px; 
                color: #0065FC;
 }
 
@@ -51,11 +55,11 @@ h1 {
                text-align: center;
                text-decoration: none;
                color: #000000;
-               padding-top: 17px;
+               padding-top: 42px;
 }
 
 .menu1 a:nth-of-type(3) {
-               font-weight: bold;
+               font-weight: bolder;
                color: #0065fc;
                
 }
@@ -80,7 +84,7 @@ h1 {
 
 .bloc2 p {
                margin-right: 20px;
-               font-weight: bold;
+               font-weight: bolder;
                font-size: 1.100rem;
                color: #000000;
                border: solid 2px #D5DBDB;
@@ -108,11 +112,23 @@ h1 {
                border: solid; border-color: #E5E8E8; background-color: #E5E8E8;
                border-width: thin; 
                border-radius: 10px 0px 0px 10px;
-               padding: 0.450rem 0.6rem 0.550rem 0.6rem;
+               padding: 0.450rem 1rem 0.550rem 0.6rem;
 }
 
 form {
-                font-size: 1.700rem;
+                font-size: 1.7rem;
+                display: flex;
+                align-items: center;
+                margin: 2rem 0;
+}
+
+form div:last-of-type {
+                display: none;
+}
+
+#ville_pays::placeholder {
+                color: #000;
+                opacity: 1;
 }
 
 .form {
@@ -159,7 +175,8 @@ form {
 
 .bloc3 {
                 display: flex;
-                justify-content: space-between;         
+                justify-content: space-between;
+                flex-wrap: wrap;         
 }
 
 h2 {
@@ -169,10 +186,10 @@ h2 {
 .héber {
                 display: flex;
                 flex-direction: column;
-                width: 66.66%;
+                width: 62%;
                 border: solid; border-color: #F2F2F2; background-color: #F2F2F2;
                 border-radius: 30px;
-                margin: 0rem 3rem 0rem 0rem;           
+                margin: 1rem 3rem 0rem 0rem;           
 }
 
 .héber_1, .héber_2 {
@@ -193,7 +210,16 @@ h2 {
                 margin: 1rem;
                 padding: 0.250rem;
                 width: 27.5%;
-                
+                transition: 0.2s;
+}
+
+a.p1, a.p2, a.p3, a.p4, a.p5, a.p6 {
+                text-decoration: none;
+                color: #000
+}
+
+a.p1:hover, a.p2:hover, a.p3:hover, a.p4:hover, a.p5:hover, a.p6:hover {
+                box-shadow: 1px 1px 12px 1px rgba(0, 0, 0, 30%);
 }
 
 .vignette {
@@ -227,21 +253,34 @@ h2 {
 .pop {
                 display: flex;
                 flex-direction: column;
-                width: 33.33%;
+                width: 32%;
                 border: solid; border-color: #F2F2F2; background-color: #F2F2F2;
                 border-radius: 30px;
+                margin-top: 1rem;
+}
+
+.titre_pop {
+                align-items: center;
+                display: flex;
+                justify-content: space-between;
+}
+
+.titre_pop i {
+                margin-right: 2rem;
+                font-weight: 600;
+                font-size: 1.250rem;
 }
 
 .vignette_populaire {
                 display: flex;
-                height: 170px;
+                height: 160px;
                 overflow: hidden;
 }
 
 .vignette_populaire img {
                 max-height: 300px;
                 position: relative;
-                width: 200px;
+                width: 130px;
                 border-radius: 30px 0 0 30px;
                 margin-right: 1rem;
                 object-fit: cover;
@@ -266,7 +305,17 @@ h2 {
                 border: solid 2px; border-color: #fff; background-color: #fff;
                 border-radius: 30px;
                 margin: 1rem 2rem 2rem 2rem;
-                padding: 0.250rem
+                padding: 0.250rem;
+                transition: 0.2s;
+}
+
+a.p7, a.p8, a.p9 {
+                text-decoration: none;
+                color: #000;
+}
+
+a.p7:hover, a.p8:hover, a.p9:hover {
+                box-shadow: 1px 1px 12px 1px rgba(0, 0, 0, 30%);
 }
 
 .description {
@@ -322,6 +371,7 @@ h2 {
 .bloc4 {
                 display: flex;
                 width: 100%;
+                flex-direction: column;
                 
 }
 
@@ -405,26 +455,12 @@ h2 {
                 object-fit: cover;
 }
 
-.moyenne {
-                height: 18rem;
-                width: 100%;
-                position: relative;
-                object-fit: cover;
-}
-
 .petite {
                 height: 12rem;
                 width: 100%;
                 position: relative;
                 object-fit: cover;
 }
-
-.très_petite {
-                height: 8rem;
-                width: 100%;
-                position: relative;
-                object-fit: cover;
-} 
 
 /*fin section activité*/
 
@@ -451,5 +487,223 @@ h2 {
 }
 
 /*fin section footer*/
+
+/*début responsive*/
+
+@media all and (max-width: 1100px) {
+
+    .bloc3 {
+        flex-direction: column-reverse;
+    }
+
+    .pop {
+        width: 100%;
+    }
+
+    .héber {
+        width: 100%;
+    }
+
+
+}
+
+@media all and (max-width: 768px) {
+
+    main {
+        padding-right: 5px;
+        padding-left: 5px;
+        margin-right: auto;
+        margin-left: auto;
+    }
+
+    /*menu*/
+
+    .bloc1 {
+        display: none;
+    }
+
+    .bloc1_mobile {
+        display: block; 
+    }
+
+    .bloc1_mobile a {
+        text-decoration: none;
+        color: #000;
+    }
+
+    .bloc1_mobile nav {
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .bloc1_mobile nav:first-of-type a:nth-of-type(2) {
+        color: #0065fc;
+        font-weight: 600;
+    }
+
+    .bloc1_mobile nav:last-of-type a {
+        
+        border-bottom: #f2f2f2 solid;
+        padding-bottom: 0.6rem;       
+        width: 50%;
+        text-align: center;
+    }
+
+    .bloc1_mobile nav:last-of-type a:active {
+        border-bottom: #0065fc solid;
+        color: #0065FC;
+        padding-bottom: 0.6rem;
+        width: 50%;
+        text-align: center;
+    }
+
+    h1 {
+        font-size: 1.3rem;
+        text-align: justify;
+    }
+
+    p {
+        font-size: 1rem;
+        text-align: justify;
+    }
+
+    /*form*/
+
+    form div:nth-of-type(3) {
+        display: none;
+    }
+    
+    form div:last-of-type {
+        display: block;
+    }
+
+    button {
+        text-decoration: none;
+        border: solid #0065fc;
+        background-color: #0065fc;
+        color: #fff;
+        border-radius: 15px;
+        margin-left: 1rem;
+        padding: 7px 9px 7px 9px;
+        font-size: 20px;
+    }
+
+    .form {
+        font-size: 1.25rem;
+        padding: 0.6rem;
+        margin-right: -3rem;
+    }
+
+    /*filtre*/
+
+    .bloc2 {
+        flex-direction: column;
+    }
+
+    .filtre {
+        text-align: justify;
+        
+    }
+
+    /*populaire*/
+
+    .bloc3 {
+        flex-direction: column-reverse;
+    }
+
+    .pop {
+        width: 100%;
+        border-radius: 0px;
+    }
+
+    .p7, .p8, .p9 {
+        margin: 0 1rem 1rem 1rem;
+        box-shadow: 1px 1px 12px 1px rgba(0, 0, 0, 30%);
+    }
+
+    .vignette_populaire img {
+        width: 150px;
+    }
+
+    .p7 p, .p8 p, .p9 p {
+        font-size: 0.9rem;
+    }
+
+    /*héber*/
+
+    .héber {
+        flex-direction: column;
+        border: #fff;
+        background-color: #fff;
+        width: 100%;
+    }
+
+    .héber_1, .héber_2 {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .p1, .p2, .p3, .p4, .p5, .p6 {
+        width: 95%;
+        height: 16rem;
+        box-shadow: 1px 1px 12px 1px rgba(0, 0, 0, 30%);
+    }
+
+    .vignette i {
+        padding-bottom: 10px;
+    }
+
+ /*activité*/
+
+    .bloc4 {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .structure_photo {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .photo_1, .photo_2_3, .photo_4, .photo_5_6 {
+        max-width: 100%;
+        height: auto;
+        margin-bottom: 1rem;
+        margin: 1rem;
+    }
+
+    .grande, .petite {
+        height: 10rem;
+        width: 100%;
+        margin-bottom: 1rem;
+    }
+
+    .bas_page {
+        flex-direction: column;
+        padding-left: 0rem;
+    }
+
+}
+
+@media all and (max-width: 480px) {
+
+    .vignette_populaire img {
+        width: 150px;
+    }
+
+    .p1, .p2, .p3, .p4, .p5, .p6 {
+        width: 90%;
+    }
+}
+ 
+
+
+
+/*fin responsive*/
 
                

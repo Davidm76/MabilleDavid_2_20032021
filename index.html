@@ -2,6 +2,7 @@
 <html>
           <head>
                     <meta charset="utf-8" />
+                    <meta name="viewport" content="width=device-width, initial-scale=1.0">
                     <link rel="stylesheet" href="style.css" />
                     <script src="https://kit.fontawesome.com/d745661341.js" crossorigin="anonymous"></script>
                     <title>Reservia</title>
@@ -20,16 +21,32 @@
                                                             <a href="s'inscrire">S'inscrire</a>                                                                      
                                                   </nav>
                                         </div>
+                                        <div class="bloc1_mobile">
+                                                  <nav>
+                                                            <a href="index.html"><img src="image/Reservia.svg" alt="logo reservia"/></a>
+                                                            <a href="s'inscrire">S'inscrire</a>
+                                                  </nav>
+                                                  <nav>          
+                                                            <a class="active" href="#hébergements">Hébergements</a>
+                                                            <a href="#activités">Activités</a>                                                                      
+                                                  </nav>
+                                        </div>
                                         <h1>Trouvez votre hébergement pour des vacances de rêve</h1>
                                         <p>En plein centre ville ou en pleine nature</p>
                                              
                                         <form method="post" action="traitement.php">
-                                                  <p>
-                                                            
-                                                  <label for="ville_pays"><i class="fas fa-map-marker-alt" alt="icone"></label></i>
-                                                  <input class="form" type="text" name="ville_pays" id="ville_pays" placeholder="Marseille, France"/>
-                                                  <input class="rechercher" type="submit" value="Rechercher"/>
-                                                  </p>
+                                                  <div>     
+                                                            <label for="ville_pays"><i class="fas fa-map-marker-alt" alt="icone"></i></label>
+                                                  </div>
+                                                  <div>
+                                                            <input class="form" type="text" name="ville_pays" id="ville_pays" placeholder="Marseille, France"/>
+                                                  </div>
+                                                  <div>
+                                                            <input class="rechercher" type="submit" value="Rechercher"/>
+                                                  </div>
+                                                  <div>
+                                                            <button><i class="fas fa-search"></i></button>
+                                                  </div> 
                                         </form>
 
                                         <div class="bloc2">
@@ -60,7 +77,7 @@
                                                             
                                                   <h2>Hébergements à Marseille</h2>
                                                   <div class="héber_1">
-                                                            <div class="p1">
+                                                            <a href="#" class="p1">
                                                                       <div class="vignette">
                                                                                 <img src="image/marcus-loke-WQJvWU_HZFo-unsplash.jpg" alt="auberge la Cannebière">
                                                                                 <div>
@@ -73,8 +90,8 @@
                                                                                           <i class="fas fa-star"></i>
                                                                                 </div>
                                                                       </div>
-                                                            </div>
-                                                            <div class="p2">
+                                                            </a>
+                                                            <a href="#" class="p2">
                                                                       <div class="vignette">
                                                                                 <img src="image/fred-kleber-gTbaxaVLvsg-unsplash.jpg" alt="hôtel du port">
                                                                                 <div>
@@ -87,8 +104,8 @@
                                                                                           <i class="fas fa-star"></i>
                                                                                 </div>
                                                                       </div>               
-                                                            </div>         
-                                                            <div class="p3">
+                                                            </a>         
+                                                            <a href="#" class="p3">
                                                                       <div class="vignette">
                                                                                 <img src="image/reisetopia-B8WIgxA_PFU-unsplash.jpg" alt="Hôtel Les mouettes">                                                                                        
                                                                                 <div>
@@ -101,10 +118,10 @@
                                                                                           <i class="fas fa-star"></i> 
                                                                                  </div>
                                                                       </div>
-                                                            </div>
+                                                            </a>
                                                   </div>
                                                   <div class="héber_2">
-                                                            <div class="p4">
+                                                            <a href="#" class="p4">
                                                                       <div class="vignette">
                                                                                 <img class="image4" src="image/annie-spratt-Eg1qcIitAuA-unsplash.jpg" alt="Hôtel de la mer">
                                                                                 <div>
@@ -117,8 +134,8 @@
                                                                                           <i class="fas fa-star"></i>       
                                                                                 </div> 
                                                                       </div>
-                                                            </div>
-                                                            <div class="p5">
+                                                            </a>
+                                                            <a href="#" class="p5">
                                                                       <div class="vignette">
                                                                                 <img src="image/nicate-lee-kT-ZyaiwBe0-unsplash.jpg" alt="Auberge Le Panier">
                                                                                 <div>
@@ -131,9 +148,9 @@
                                                                                           <i class="fas fa-star"></i>
                                                                                 </div>
                                                                       </div>               
-                                                            </div>
+                                                            </a>
                                                                            
-                                                                      <div class="p6">
+                                                            <a href="#" class="p6">
                                                                       <div class="vignette">
                                                                                 <img class="image6" src="image/febrian-zakaria-M6S1WvfW68A-unsplash.jpg" alt="Hôtel chez Amina">
                                                                                 <div>
@@ -146,7 +163,7 @@
                                                                                           <i class="fas fa-star"></i>
                                                                                 </div>
                                                                       </div>
-                                                            </div>
+                                                            </a>
                                                   </div>
                                                   <p><b>Afficher plus</b></p>
                                         </div>
@@ -155,8 +172,11 @@
                                                             
                                                               
                                         <div class="pop">
-                                                  <h2>Les plus populaires</h2>
-                                                  <div class="p7">
+                                                  <div class="titre_pop">
+                                                            <h2>Les plus populaires</h2>
+                                                            <i class="fas fa-chart-line"></i>
+                                                  </div>
+                                                  <a href="#" class="p7">
                                                             <div class="vignette_populaire">
                                                                       <img src="image/emile-guillemot-Bj_rcSC5XfE-unsplash.jpg" alt="Hôtel Le soleil du matin">
                                                                       <div class="description">
@@ -171,8 +191,8 @@
                                                                                 </div>
                                                                       </div>
                                                             </div>
-                                                  </div>
-                                                  <div class="p8">
+                                                  </a>
+                                                  <a href="#" class="p8">
                                                             <div class="vignette_populaire">
                                                                       <img class="photo_8" src="image/aw-creative-VGs8z60yT2c-unsplash.jpg" alt="Au coeur de l'eau Chambres d'hôtes">
                                                                       <div class="description">                         
@@ -187,8 +207,8 @@
                                                                                 </div>
                                                                       </div>
                                                             </div>
-                                                  </div>
-                                                  <div class="p9">
+                                                  </a>
+                                                  <a href="#" class="p9">
                                                             <div class="vignette_populaire">
                                                                       <img src="image/febrian-zakaria-sjvU0THccQA-unsplash.jpg" alt="Hôtel Tout bleu et blanc">
                                                                       <div class="description">
@@ -203,17 +223,14 @@
                                                                                 </div>
                                                                       </div>
                                                             </div>
-                                                  </div>
+                                                  </a>
                                         </div>
                               </section> 
                               
                               <section>
 
                                         <div class="bloc4">
-                                                  <div>
                                                   <h2 id="activités">Activités à Marseille</h2>
-                                                                           
-                                                  
                                                             <div class="structure_photo">    
                                                                       <div class="photo_1">  
                                                                                           <img class="grande" src="image/reno-laithienne-QUgJhdY5Fyk-unsplash.jpg" alt="Vieux Port">                                                                                                                                           
@@ -243,8 +260,7 @@
                                                                                           <p class="texte">Parc Longchamp</p>
                                                                                 </div>
                                                                       </div>
-                                                            </div>                                                          
-                                                  </div>             
+                                                            </div>                                                                       
                               </section>
                     </main>
 
