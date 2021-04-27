@@ -22,7 +22,7 @@ main {
 
 /*Début_header*/
 
-h1 {
+h1, h2, h3, h4, h5, h6 {
                
                font-size: 1.4em ;
                font-weight: bolder;
@@ -96,10 +96,11 @@ h1 {
                padding: 14px 16px 14px 54px;         
 }
 
-.bloc2 .filtre {
+.filtre {
                border: none;
                padding: 0;
                margin-right: 1rem;
+               font-size: 1.125rem;
 }
 
 .bloc2 .fas {
@@ -134,6 +135,10 @@ form div:last-of-type {
 #ville_pays::placeholder {
                 color: #000;
                 opacity: 1;
+}
+
+.rechercher:hover {
+                cursor: pointer;
 }
 
 .form {
@@ -189,7 +194,7 @@ form div:last-of-type {
                 flex-wrap: wrap;         
 }
 
-.héber h2, .pop h2 {
+.héber h3, .pop h4 {
                 margin-left: 2rem;
 }
 
@@ -651,6 +656,8 @@ a.p7:hover, a.p8:hover, a.p9:hover {
 
     .filtre {
         text-align: justify; 
+        font-size: 1.125rem;
+
     }
 
     .bloc2 .filtre {
