@@ -1,7 +1,6 @@
 <!DOCTYPE html>
-<html>
+<html lang="fr">
           <head>
-                    <html lang="fr">
                     <meta charset="utf-8" />                  
                     <meta name="viewport" content="width=device-width, initial-scale=1.0">
                     <link rel="stylesheet" href="style.css" />
@@ -33,11 +32,11 @@
                                                   </nav>
                                         </div>
                                         <h1>Trouvez votre hébergement pour des vacances de rêve</h1>
-                                        <p>En plein centre ville ou en pleine nature</p>
+                                        <p class="ph1">En plein centre ville ou en pleine nature</p>
                                              
                                         <form method="post" action="traitement.php">
                                                   <div>     
-                                                            <label for="ville_pays"><i class="fas fa-map-marker-alt" alt="icone"></i></label>
+                                                            <label for="ville_pays"><i class="fas fa-map-marker-alt"></i></label>
                                                   </div>
                                                   <div>
                                                             <input class="form" type="text" name="ville_pays" id="ville_pays" placeholder="Marseille, France"/>
@@ -50,9 +49,10 @@
                                                   </div> 
                                         </form>
 
-                                        <div class="bloc2">
-                                                  <p class="filtre">Filtres</p>
-                                                  <section>
+                                        <div class="bloc2">                                                
+                                                  
+                                                  <h2 class="filtre">Filtres</h2>
+                                                  <div class="filtre2">
                                                             <div class="économique">
                                                                       <span class="fas fa-money-bill-wave"></span><p>&Eacute;conomique</p>                                                                                         
                                                             </div>
@@ -64,14 +64,17 @@
                                                             </div>
                                                             <div class="animaux">
                                                                       <span class="fas fa-dog"></span><p>Animaux autorisés</p>
-                                                            </div>                                                                                     
-                                                  </section>
+                                                            </div> 
+                                                  </div>                                                                                    
+                                                  
                                         </div>
                                                             
                               </header>
 
-                              
-                              <p><span class="fas fa-info"></span>Plus de 500 logements sont disponibles dans cette ville<br /></p>
+                              <div class="texte">
+                                        <span class="fas fa-info"></span>
+                                        <p class="plus">Plus de 500 logements sont disponibles dans cette ville<br /></p>
+                              </div>
 
                               <section class="bloc3">
                                         <div class="héber">                                                           
@@ -267,7 +270,7 @@
                     </main>
 
                               <footer>
-                                        <section class="bas_page">
+                                        <div class="bas_page">
                                                   <aside>
                                                             <p class="titre"> A propos</p>
                                                             <p> fonctionnement du site</p>
@@ -284,7 +287,7 @@
                                                             <p> Centre d'aide</p>
                                                             <p> Nous contacter</p>
                                                   </aside>
-                                        </section>
+                                        </div>
                               </footer>
 
                </body>
